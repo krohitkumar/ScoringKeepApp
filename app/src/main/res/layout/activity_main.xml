@@ -1,100 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<TableLayout xmlns:android=
+    "http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent" >
 
-    <Button
-        android:id="@+id/Team 1 inc"
-        android:layout_width="38dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="116dp"
-        android:text="@string/teamAInc"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <Button
-        android:id="@+id/Team 1 dec"
-        android:layout_width="38dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="68dp"
-        android:text="@string/teamADec"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Team 1 inc" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/Team 1"
-        android:layout_width="90dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="96dp"
-        android:text="@string/teamA"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/teamA"
+            android:layout_width="133dp"
+            android:layout_height="100dp"
+            android:baselineAligned="false"
+            android:text="@string/teamA"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp" />
+    </TableRow>
 
-    <TextView
-        android:id="@+id/Team 2"
-        android:layout_width="90dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="64dp"
-        android:text="@string/teamB"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-    <Button
-        android:id="@+id/Team 2 dec"
-        android:layout_width="36dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="84dp"
-        android:text="@string/teamBDec"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Team 2 inc" />
+        <TextView
+            android:id="@+id/textAScore"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="@string/teamAScore"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="30sp" />
+    </TableRow>
 
-    <Button
-        android:id="@+id/Team 2 inc"
-        android:layout_width="40dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="84dp"
-        android:text="@string/teamBInc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
 
-    <TextView
-        android:id="@+id/textView3"
+        <Button
+            android:id="@+id/teamADec"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="@string/teamADec"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/teamAInc"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="@string/teamAInc"
+            android:textSize="30sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/teamB"
+            android:layout_width="131dp"
+            android:layout_height="100dp"
+            android:text="@string/teamB"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textBScore"
+            android:layout_width="131dp"
+            android:layout_height="100dp"
+            android:text="@string/teamBScore"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/teamBDec"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="131dp"
+            android:layout_height="75dp"
+            android:text="@string/teamBDec"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/teamBInc"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="131dp"
+            android:layout_height="75dp"
+            android:text="@string/teamBInc"
+            android:textSize="30sp" />
+
+    </TableRow>
+    <RadioGroup
+        android:id="@+id/roundingRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="60dp"
-        android:text="@string/teamAScore"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Team 1" />
+        android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="96dp"
-        android:text="@string/teamBScore"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Team 2" />
+    <RadioButton
+        android:id="@+id/incrementRadio5"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:checked="true"
+        android:text="@string/incBy5"
+        android:textSize="25sp" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="204dp" />
+    <RadioButton
+        android:id="@+id/incrementRadio10"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:text="@string/incBy10"
+        android:textSize="25sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</TableLayout>
+

@@ -8,4 +8,7 @@
     <string name="teamBDec">-</string>
     <string name="teamAScore">0</string>
     <string name="teamBScore">0</string>
+    <string name="incBy5">Increment By 5</string>
+    <string name="incBy10">Increment By 10</string>
+
 </resources>
