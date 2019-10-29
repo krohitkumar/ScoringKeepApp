@@ -1,132 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android=
-    "http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@android:drawable/ic_menu_delete"
+    android:backgroundTint="#4A412A"
+    android:textAlignment="textStart"
+    android:textDirection="locale">
 
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:accessibilityLiveRegion="polite"
+        android:background="@android:drawable/btn_star_big_on"
+        android:backgroundTint="@android:color/holo_purple"
+        android:textAlignment="textStart"
+        android:textDirection="locale">
 
         <TextView
             android:id="@+id/teamA"
-            android:layout_width="133dp"
+            android:layout_width="131dp"
             android:layout_height="100dp"
+            android:background="@android:drawable/ic_menu_help"
+            android:backgroundTint="@android:color/holo_green_dark"
             android:baselineAligned="false"
             android:text="@string/teamA"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorAccent"
+            android:textDirection="locale"
             android:textSize="30sp" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="@android:drawable/btn_star_big_on"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textAlignment="textStart"
+        android:textDirection="locale">
 
         <TextView
             android:id="@+id/textAScore"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
+            android:background="@android:drawable/btn_star_big_on"
+            android:backgroundTint="@android:color/holo_blue_dark"
             android:text="@string/teamAScore"
-            android:textAlignment="center"
+            android:textAlignment="viewStart"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textDirection="locale"
             android:textSize="30sp" />
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
-        android:layout_height="100dp">
+        android:layout_height="100dp"
+        android:background="@android:drawable/btn_star_big_on"
+        android:backgroundTint="@android:color/black"
+        android:textAlignment="textStart"
+        android:textDirection="locale">
 
         <Button
             android:id="@+id/teamADec"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="75dp"
+            android:background="@android:drawable/divider_horizontal_textfield"
+            android:backgroundTint="@android:color/background_light"
             android:text="@string/teamADec"
-            android:textSize="30sp" />
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textDirection="locale"
+            android:textSize="50sp" />
 
         <Button
             android:id="@+id/teamAInc"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="75dp"
+            android:background="@android:drawable/ic_input_add"
+            android:backgroundTint="@android:color/holo_red_dark"
             android:text="@string/teamAInc"
-            android:textSize="30sp" />
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textDirection="locale"
+            android:textSize="50sp" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="@android:drawable/btn_star_big_on"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textAlignment="textStart"
+        android:textDirection="locale">
 
         <TextView
             android:id="@+id/teamB"
             android:layout_width="131dp"
             android:layout_height="100dp"
+            android:background="@android:drawable/ic_delete"
             android:text="@string/teamB"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#227AB5"
+            android:textDirection="locale"
             android:textSize="30sp" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="@android:drawable/btn_star_big_on"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textAlignment="textStart"
+        android:textDirection="locale">
 
         <TextView
             android:id="@+id/textBScore"
             android:layout_width="131dp"
             android:layout_height="100dp"
+            android:background="@android:drawable/list_selector_background"
+            android:backgroundTint="@android:color/black"
             android:text="@string/teamBScore"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textDirection="locale"
             android:textSize="30sp" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:drawable/btn_star_big_on"
+        android:backgroundTint="@android:color/holo_purple"
+        android:textAlignment="textStart"
+        android:textDirection="locale">
 
         <Button
             android:id="@+id/teamBDec"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="131dp"
             android:layout_height="75dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:backgroundTint="@android:color/white"
             android:text="@string/teamBDec"
-            android:textSize="30sp" />
+            android:textAlignment="textStart"
+            android:textDirection="locale"
+            android:textSize="50sp" />
 
         <Button
             android:id="@+id/teamBInc"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="131dp"
             android:layout_height="75dp"
+            android:background="@android:drawable/ic_input_add"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:text="@string/teamBInc"
-            android:textSize="30sp" />
+            android:textAlignment="textStart"
+            android:textDirection="locale"
+            android:textSize="50sp" />
 
     </TableRow>
+
     <RadioGroup
         android:id="@+id/roundingRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:textAlignment="textStart"
+        android:textDirection="locale">
 
     <RadioButton
         android:id="@+id/incrementRadio5"
         android:layout_width="131dp"
         android:layout_height="50dp"
+        android:background="@android:drawable/ic_media_next"
+        android:backgroundTint="@android:color/holo_blue_light"
         android:checked="true"
         android:text="@string/incBy5"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/holo_red_dark"
+        android:textDirection="locale"
         android:textSize="25sp" />
 
     <RadioButton
         android:id="@+id/incrementRadio10"
         android:layout_width="131dp"
         android:layout_height="50dp"
+        android:background="@android:drawable/ic_media_ff"
+        android:backgroundTint="@android:color/holo_green_light"
         android:text="@string/incBy10"
+        android:textAlignment="gravity"
+        android:textDirection="inherit"
         android:textSize="25sp" />
-
 
 
 </TableLayout>
